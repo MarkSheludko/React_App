@@ -17,11 +17,9 @@ class App extends Component {
             </Navbar.Brand>
             </Navbar.Header>
             <Nav>
-            <NavItem eventKey={1} href="#">Home</NavItem>
-            <Link to={'/popular/'}>
-            <NavItem eventKey={2} href="#">Popular</NavItem>
-            </Link>
-            <NavItem className="latest" eventKey={2} href="#">Latest</NavItem>
+            <NavItem eventKey={1}><Link to='/'>Home</Link></NavItem>
+            <NavItem eventKey={2}><Link to='/popular'>Popular</Link></NavItem>
+            <NavItem eventKey={2}><Link to='/schedule'>Latest</Link></NavItem>
             </Nav>
         </Navbar>
 
